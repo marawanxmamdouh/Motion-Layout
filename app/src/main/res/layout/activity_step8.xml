@@ -1,4 +1,4 @@
-***REMOVED***
+<?xml version="1.0" encoding="utf-8"?>
 
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,7 +14,9 @@
             android:id="@+id/motion_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layoutDescription="@xml/step8"
+            android:minHeight="80dp"
+            app:layoutDescription="@xml/activity_step8_scene"
+            app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
             app:motionDebug="SHOW_PATH">
 
             <ImageView
@@ -33,8 +35,8 @@
                 android:id="@+id/moon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:tint="?colorOnPrimary"
-                app:srcCompat="@drawable/ic_moon" />
+                app:srcCompat="@drawable/ic_moon"
+                app:tint="?colorOnPrimary" />
 
             <TextView
                 android:id="@+id/credits"
